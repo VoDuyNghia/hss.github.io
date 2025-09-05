@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Success</title>
+  <meta http-equiv="refresh" content="0; url=hssakk://payment/success">
+  <script>
+    // fallback: nếu app không tự mở
+    setTimeout(() => {
+      document.body.innerHTML = `
+        <h1>Thanh toán thành công ✅</h1>
+        <p>Nếu app không tự mở, hãy bấm nút dưới đây:</p>
+        <a href="hssakk://payment/success" style="font-size:20px;">Mở App</a>
+      `;
+    }, 1000);
+  </script>
+</head>
+<body>
+  <p>Đang mở app...</p>
+</body>
+</html>
